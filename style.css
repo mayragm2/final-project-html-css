@@ -21,6 +21,17 @@ nav{
     border-radius: 3px;
     padding: 3px;
     height: 40px;
+    box-shadow: 0px 1px 10px #0000001A;
+}
+nav div{
+    display: flex;
+    height: 150%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px #0000001A;
+
 }
 nav img{
     justify-self: center;
