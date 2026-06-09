@@ -9,7 +9,7 @@ body{
     background-repeat: repeat-y;
     background-color: #5956E9;
     background-size: 100%;
-
+    font-family: Josefin Sans;
 }
 
 nav{
@@ -38,7 +38,6 @@ nav img{
     height: 12px;
     
 }
-
 nav button{
     height: 100%;
     width: 76px;
@@ -54,6 +53,34 @@ nav button{
 nav span{
     padding: 5px;
     justify-self: left;
+}
+
+.phone-recent-transactions{
+    display: flex;
+    justify-content: right;
+}
+
+.box{
+    display:grid;
+    grid-template-columns: 20px 1fr;
+    padding: 1rem;
+}
+
+.box div:first-of-type{
+    position: relative;
+    background-color: white;
+    margin: 20px 0px;
+    padding: 1rem;
+    width: 70vw;
+}
+.box div:last-of-type{
+    border: 10px solid #7572FF;
+    box-sizing: border-box;
+}
+.box div:first-of-type h2{
+    color:#5956E9;
+    font-weight: 600;
+    font-size: 25px;
 }
 .about-app{
     background-color: white;
