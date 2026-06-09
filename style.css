@@ -2,3 +2,21 @@
     margin: 0px;
 }
 
+.main-page{
+    background-image: url(assets/background.png);
+}
+
+.about-app{
+    background-color: white;
+}
+.about-app{
+    background-image: url(assets/background.png);
+}
+
+.our-team{
+    background-color: white;
+}
+
+footer{
+    background-color: #232233;
+}
