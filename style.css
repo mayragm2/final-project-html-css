@@ -2,16 +2,17 @@
     margin: 0px;
 }
 
-.main-page{
+body{
     background-image: url(assets/background.png);
+    background-repeat: repeat-y;
+    background-color: #5956E9;
+    background-size: 100%;
 }
 
 .about-app{
     background-color: white;
 }
-.about-app{
-    background-image: url(assets/background.png);
-}
+
 
 .our-team{
     background-color: white;
