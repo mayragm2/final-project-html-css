@@ -3,7 +3,25 @@
 *{
     margin: 0px;
 }
+h6{
+    font-family: Josefin Sans;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+h5{
+    font-family: Josefin Sans;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37.5px;
+}
+p{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 
+}
 body{
     background-image: url(assets/background.png);
     background-repeat: repeat-y;
@@ -77,10 +95,8 @@ nav span{
     border: 10px solid #7572FF;
     box-sizing: border-box;
 }
-.box div:first-of-type h2{
+.box div:first-of-type h5{
     color:#5956E9;
-    font-weight: 600;
-    font-size: 25px;
 }
 .about-app{
     background-color: white;
