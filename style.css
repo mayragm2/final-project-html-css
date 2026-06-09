@@ -20,6 +20,7 @@ p{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    color: #6C6C72;
 
 }
 body{
@@ -89,7 +90,7 @@ nav span{
     background-color: white;
     margin: 20px 0px;
     padding: 1rem;
-    width: 70vw;
+    width: 78vw;
 }
 .box div:last-of-type{
     border: 10px solid #7572FF;
