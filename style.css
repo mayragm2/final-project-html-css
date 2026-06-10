@@ -73,7 +73,9 @@ nav span{
     padding: 5px;
     justify-self: left;
 }
-
+main{
+    margin-top: 6rem;
+}
 .phone-recent-transactions{
     display: flex;
     justify-content: right;
@@ -89,8 +91,11 @@ nav span{
     position: relative;
     background-color: white;
     margin: 20px 0px;
-    padding: 1rem;
+    padding: 1rem 1rem;
     width: 78vw;
+}
+.box div:first-of-type *{
+    margin: 1rem 0rem;
 }
 .box div:last-of-type{
     border: 10px solid #7572FF;
@@ -98,6 +103,9 @@ nav span{
 }
 .box div:first-of-type h5{
     color:#5956E9;
+}
+.box div:first-of-type img{
+    margin-bottom: 0px;
 }
 .about-app{
     background-color: white;
