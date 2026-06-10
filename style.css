@@ -24,6 +24,13 @@ h5{
     font-size: 25px;
     line-height: 37.5px;
 }
+h4{
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 47.25px;
+    color: #232233;
+}
 p{
     font-family: Josefin Sans;
     font-weight: 400;
