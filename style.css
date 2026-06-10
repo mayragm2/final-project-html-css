@@ -3,6 +3,15 @@
 *{
     margin: 0px;
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color: #5956E9;
+}
 h6{
     font-family: Josefin Sans;
     font-weight: 600;
@@ -30,7 +39,6 @@ body{
     background-size: 100%;
     font-family: Josefin Sans;
 }
-
 nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -79,14 +87,14 @@ main{
 .phone-recent-transactions{
     display: flex;
     justify-content: right;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
 }
-
 .box{
     display:grid;
     grid-template-columns: 20px 1fr;
     padding: 1rem;
 }
-
 .box div:first-of-type{
     position: relative;
     background-color: white;
@@ -107,18 +115,37 @@ main{
 .box div:first-of-type img{
     margin-bottom: 0px;
 }
-
-.phone-recent-transactions{
-    margin-top: 2rem;
-}
 .about-app{
     background-color: white;
+    padding: 60px 0px;
+}
+.about-app h5{
+    justify-self: center;
+}
+.about-app >p:nth-of-type(1){
+    margin: 2rem;
+    justify-content: center;
+    text-align: center;
+    padding:6px;
+}
+.about-app img{
+    display: flex;
+    justify-self: center;
+}
+
+.about-app .card{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    box-shadow: 0px 1px 10px #0000001A;
+    margin: 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    
 }
 
 .our-team{
     background-color: white;
 }
-
 footer{
     background-color: #232233;
 }
