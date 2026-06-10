@@ -132,7 +132,6 @@ main{
     display: flex;
     justify-self: center;
 }
-
 .about-app .card{
     display: grid;
     grid-template-columns: 40px 1fr;
@@ -142,6 +141,28 @@ main{
     padding: 1rem;
     
 }
+.app-features *{
+ color: white;
+ text-align: center;
+ margin: 1rem 0rem;
+}
+.mockup{
+    border-radius: 40px;
+    width: 214px;
+}
+.app-features{
+    margin: 4rem;
+    justify-content: center;
+}
+.app-features div{
+    margin: 5rem 1rem;
+}
+.app-features img{
+    display: flex;
+    justify-self: center;
+    margin: 2rem 0rem;
+}
+
 
 .our-team{
     background-color: white;
