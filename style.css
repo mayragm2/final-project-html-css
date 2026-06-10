@@ -107,10 +107,13 @@ main{
 .box div:first-of-type img{
     margin-bottom: 0px;
 }
+
+.phone-recent-transactions{
+    margin-top: 2rem;
+}
 .about-app{
     background-color: white;
 }
-
 
 .our-team{
     background-color: white;
