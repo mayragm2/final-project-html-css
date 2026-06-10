@@ -165,6 +165,27 @@ main{
 
 .our-team{
     background-color: white;
+    text-align: center;
+}
+.our-team .title-section{
+    padding: 4rem 3rem 1rem 3rem;
+}
+.our-team .card *{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.our-team .card{
+    box-shadow: 0px 1px 10px #0000001A;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;   
+
+}
+.our-team .card img{
+    border-radius: 50%;
+    justify-self: center;
 }
 footer{
     background-color: #232233;
