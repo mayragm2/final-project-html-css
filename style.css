@@ -153,7 +153,7 @@ main{
 .about-app h5{
     justify-self: center;
 }
-.about-app >p:nth-of-type(1){
+.about-app .title-section p{
     margin: 2rem;
     justify-content: center;
     text-align: center;
@@ -217,6 +217,9 @@ main{
 .our-team .card img{
     border-radius: 50%;
     justify-self: center;
+    outline: 4px solid #5956e5;
+    outline-offset: 4px;
+
 }
 .our-team {
     padding-bottom: 15rem;
@@ -412,5 +415,14 @@ nav span{
   background:var(--bg-color);
   border: var(--b) solid var(--border-color);
   transform:translate(var(--o));
+}
+.about-app .content{
+    display: flex;
+}
+.about-app .content .cards{
+    display: block;
+}
+.about-app img{
+    margin-left:2rem;   
 }
 }
