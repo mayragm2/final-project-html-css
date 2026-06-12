@@ -430,4 +430,17 @@ aside p {
   .about-app img {
     margin-left: 2rem;
   }
+  .app-feature-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a a a"
+    "b c d"
+    "e c f"
+    "g g g";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .app-features div{
+    margin: 0px;
+  }
 }
