@@ -21,7 +21,7 @@ h6 {
   line-height: 30px;
   
 }
-h5 {
+h5, h2 {
   font-family: Josefin Sans;
   font-weight: 600;
   font-size: 25px;
@@ -33,6 +33,9 @@ h4 {
   font-size: 31.25px;
   line-height: 47.25px;
   color: #232233;
+}
+h2{
+  color: #5956e5;
 }
 p {
   font-family: Josefin Sans;
@@ -99,6 +102,9 @@ main {
   justify-content: right;
   margin: 4rem 0rem;
 }
+.phone-recent-transactions img{
+  width: 75%;
+}
 .box {
   --b: 10px; /* border thickness*/
   --o: 20px, -20px; /* offset*/
@@ -106,7 +112,7 @@ main {
   --bg-color: #5956e5;
 
   width: 80%;
-  height: 80%;
+  height: auto;
   display: flex;
   justify-self: center;
   transform: translateX(-10px);
@@ -150,7 +156,13 @@ main {
   color: #5956e9;
 }
 .box div img {
-  margin-bottom: 0px;
+  margin: 0px;
+  width: 70%;
+}
+.box-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .about-app {
   background-color: white;
@@ -177,11 +189,15 @@ main {
   border-radius: 10px;
   padding: 1rem;
 }
+.wide-screen-text{
+  display: none;
+}
 .app-features * {
   color: white;
   text-align: center;
   margin: 1rem 0rem;
 }
+
 .mockup {
   border-radius: 40px;
   width: 214px;
@@ -372,6 +388,13 @@ aside p {
     line-height: 47.25px;
     color: #232233;
   }
+    h2 {
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 47.25px;
+    color: #5956e5;
+  }
   p {
     font-family: Josefin Sans;
     font-weight: 400;
@@ -399,8 +422,16 @@ aside p {
     justify-self: left;
   }
   .main-page {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
     align-items: center;
+  }
+  .phone-recent-transactions{
+    display: block;
+    margin: 0;
+  }
+  .phone-recent-transactions img{
+    width: 100%;
   }
   .box {
     --b: 18px; /* border thickness*/
@@ -409,7 +440,6 @@ aside p {
     --bg-color: #5956e5;
 
     width: 80%;
-    height: 80%;
     display: flex;
     justify-self: center;
     transform: translateX(-18px);
@@ -443,6 +473,7 @@ aside p {
   }
   .about-app .content {
     display: flex;
+    justify-content: center;
   }
   .about-app .content .cards {
     display: block;
@@ -533,4 +564,69 @@ aside p {
   .main-footer-content .newsletter form {
     grid-template-columns: 75% 25%;
   }
+}
+@media (min-width: 1440px) {
+h6 {
+  font-family: Josefin Sans;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37.5px;
+  
+}
+h5 {
+  font-family: Josefin Sans;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 47.25%;
+}
+h4 {
+  font-family: Josefin Sans;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 47.25px;
+  color: #232233;
+}
+h2{
+  font-family: Josefin Sans;
+  font-weight: 700;
+  font-size: 48.83px;
+  line-height: 130%;
+  color: #5956e5;
+}
+p {
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6c6c72;
+}
+.phone-recent-transactions img{
+  width: 100%;
+  margin: 0px;
+}
+.phone-recent-transactions{
+  margin: 0px;
+}
+main{
+  margin-top: 0px;
+}
+nav{
+  margin: 5% 8%;
+}
+.box {
+  margin: 5% 10%;
+}
+.box div{
+  padding: 2rem;
+}
+.about-app{
+  padding: 8rem 10rem;
+}
+.wide-screen-text{
+  display:block;
+}
+.narrow-screen-text{
+  display:none;
+}
+
 }
