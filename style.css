@@ -19,6 +19,7 @@ h6 {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
+  
 }
 h5 {
   font-family: Josefin Sans;
@@ -216,7 +217,9 @@ main {
   margin: 1rem 1rem 0rem 1rem;
   border-radius: 10px;
   padding: 1rem;
+  font-weight: 300;
 }
+
 .our-team .card img {
   border-radius: 50%;
   justify-self: center;
@@ -231,11 +234,7 @@ footer {
   padding: 0rem 1rem;
 }
 
-footer .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+footer .card{
   background-color: white;
   border-radius: 10px;
   padding: 1rem;
@@ -245,23 +244,34 @@ footer .card {
   box-shadow: 0px 1px 10px #0000003d;
 }
 footer .card * {
-  margin: 0.5rem 0rem;
+  margin: 0.5rem 0.2rem;
 }
-
+footer .card div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 footer .card img {
   width: 50px;
 }
-
-footer div:not(.card) {
-  margin-bottom: 4rem;
+footer .card hr{
+  width:100px;
+  height: 1px;
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5%;
 }
-footer div:not(.card) * {
+
+footer .footer-content *{
   color: rgb(255, 255, 255);
-  margin: 1rem 0rem;
+}
+footer .footer-content div *{
+  margin: 0rem 0rem 2rem 0rem;
 }
 footer div .social-media {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-right: 4rem;
 }
 footer div .social-media * {
@@ -271,7 +281,7 @@ footer div .social-media * {
 footer div .social-media hr {
   background-color: white;
 }
-footer div:nth-of-type(2) {
+footer .logo {
   padding-top: 15rem;
 }
 .quick-link ul {
@@ -314,7 +324,17 @@ input::placeholder {
   border: 0px;
   height: 90%;
   border-radius: 4px;
-  margin: 5% !important;
+  margin: 0% 4% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin-right: 2%;
+}
+.newsletter form *{
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  align-items: center;
 }
 aside {
   color: white;
@@ -331,7 +351,7 @@ aside p {
   color: white;
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px)  {
   h6 {
     font-family: Josefin Sans;
     font-weight: 600;
@@ -442,5 +462,75 @@ aside p {
   }
   .app-features div{
     margin: 0px;
+  }
+  .our-team .cards{
+    display: flex;
+    flex-direction: row;
+  }
+  .our-team .card{
+    padding: 1rem 0rem;
+    margin: 0.7rem 0.7rem 0rem 0.7rem;
+
+  }
+  .our-team .card h6{
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6c6c72;
+  }
+  .our-team .card img{
+    width: 70%;
+  }
+  .our-team .social-media *{
+    margin: 0.5rem;
+  }
+  footer .card{
+    display: grid; 
+    grid-template-columns: 5fr 1fr 5fr;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+  }
+  footer .card div{
+    display: flex;
+    flex-direction: row;
+  }
+  footer .card .email{
+    align-content: left;
+  }
+  footer .card .phone{
+    align-content: left;
+  }
+
+  footer .card h6{
+      font-size: 16px;
+      text-transform: lowercase;
+      font-weight: 400;
+      line-height: 24px;
+  }
+  footer .card hr {
+    padding: 0rem;
+    height: 100px;
+    width: 1px;
+  }
+  footer .card *{
+    padding: 0.5rem;
+    margin: 0px;
+  }
+  .main-footer-content .logo{
+    padding: 0;
+  }
+  .main-footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10rem;
+  }
+  .main-footer-content .social-media *{
+    margin: 0.5rem;
+
+  }
+  .main-footer-content .newsletter form {
+    grid-template-columns: 75% 25%;
   }
 }
