@@ -55,7 +55,7 @@ body {
   display: none;
 }
 header{
-  margin:1rem 5rem;
+  margin:1rem 10%;
 }
 nav {
   display: grid;
@@ -155,14 +155,14 @@ main {
   padding: 1rem 1rem;
 }
 .box div * {
-  margin: 1rem 0rem;
+  margin: 1rem 0rem 0rem 0rem;
 }
 .box div h5 {
   color: #5956e9;
 }
 .box div img {
   margin: 0px;
-  width: 70%;
+  width:calc(14rem + 10%);
 }
 .box-content{
   display: flex;
@@ -407,6 +407,10 @@ aside p {
     line-height: 24px;
     color: #6c6c72;
   }
+
+  header{
+    margin: 1rem 3rem;
+  }
   .contact-info{
     display: grid;
     grid-template-columns: 70% 30%;
@@ -447,6 +451,8 @@ aside p {
   }
   nav div {
     height: calc(100% + 30px);
+    width: 80%;
+    justify-self: center;
   }
   nav img {
     justify-self: center;
@@ -479,7 +485,7 @@ aside p {
     --border-color: #7572ff;
     --bg-color: #5956e5;
 
-    width: 80%;
+    width: 75%;
     display: flex;
     justify-self: center;
     transform: translateX(-18px);
@@ -639,6 +645,12 @@ p {
   font-size: 16px;
   line-height: 24px;
   color: #6c6c72;
+}
+nav div{
+  width: 50%;
+}
+nav button{
+  width: 30%;
 }
 .phone-recent-transactions img{
   width: 100%;
