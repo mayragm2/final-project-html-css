@@ -19,9 +19,9 @@ h6 {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
-  
 }
-h5, h2 {
+h5,
+h2 {
   font-family: Josefin Sans;
   font-weight: 600;
   font-size: 25px;
@@ -34,7 +34,7 @@ h4 {
   line-height: 47.25px;
   color: #232233;
 }
-h2{
+h2 {
   color: #5956e5;
 }
 p {
@@ -51,11 +51,11 @@ body {
   background-size: 100%;
   font-family: Josefin Sans;
 }
-.contact-info{
+.contact-info {
   display: none;
 }
-header{
-  margin:1rem 10%;
+header {
+  margin: 1rem 10%;
 }
 nav {
   display: grid;
@@ -107,7 +107,7 @@ main {
   justify-content: right;
   margin: 4rem 0rem;
 }
-.phone-recent-transactions img{
+.phone-recent-transactions img {
   width: 75%;
 }
 .box {
@@ -162,9 +162,9 @@ main {
 }
 .box div img {
   margin: 0px;
-  width:calc(14rem + 10%);
+  width: calc(14rem + 10%);
 }
-.box-content{
+.box-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -194,7 +194,7 @@ main {
   border-radius: 10px;
   padding: 1rem;
 }
-.wide-screen-text{
+.wide-screen-text {
   display: none;
 }
 .app-features * {
@@ -255,7 +255,7 @@ footer {
   padding: 0rem 1rem;
 }
 
-footer .card{
+footer .card {
   background-color: white;
   border-radius: 10px;
   padding: 1rem;
@@ -267,7 +267,7 @@ footer .card{
 footer .card * {
   margin: 0.5rem 0.2rem;
 }
-footer .card div{
+footer .card div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,18 +276,18 @@ footer .card div{
 footer .card img {
   width: 50px;
 }
-footer .card hr{
-  width:100px;
+footer .card hr {
+  width: 100px;
   height: 1px;
   background-color: #000000;
   border: 1px solid #000000;
   border-radius: 5%;
 }
 
-footer .footer-content *{
+footer .footer-content * {
   color: rgb(255, 255, 255);
 }
-footer .footer-content div *{
+footer .footer-content div * {
   margin: 0rem 0rem 2rem 0rem;
 }
 footer div .social-media {
@@ -352,10 +352,14 @@ input::placeholder {
   align-self: center;
   margin-right: 2%;
 }
-.newsletter form *{
+.newsletter form * {
   display: grid;
   grid-template-columns: 1fr 0fr;
   align-items: center;
+}
+.newsletter form input {
+  color: #000000;
+  margin-left: 1rem !important;
 }
 aside {
   color: white;
@@ -372,7 +376,7 @@ aside p {
   color: white;
 }
 
-@media (min-width: 768px)  {
+@media (min-width: 768px) {
   h6 {
     font-family: Josefin Sans;
     font-weight: 600;
@@ -393,7 +397,7 @@ aside p {
     line-height: 47.25px;
     color: #232233;
   }
-    h2 {
+  h2 {
     font-family: Josefin Sans;
     font-weight: 700;
     font-size: 31.25px;
@@ -408,43 +412,43 @@ aside p {
     color: #6c6c72;
   }
 
-  header{
+  header {
     margin: 1rem 3rem;
   }
-  .contact-info{
+  .contact-info {
     display: grid;
     grid-template-columns: 70% 30%;
-    color:white;
+    color: white;
   }
-  .contact-info *{
+  .contact-info * {
     font-family: Josefin Sans;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
   }
 
-  .left-column-contact-info{
+  .left-column-contact-info {
     display: flex;
     margin-bottom: 1rem;
   }
-  .left-column-contact-info *{
+  .left-column-contact-info * {
     margin-right: 0.5rem;
   }
-  .left-column-contact-info .email{
+  .left-column-contact-info .email {
     display: flex;
-    align-items: center ;
+    align-items: center;
   }
-  .left-column-contact-info .phone{
+  .left-column-contact-info .phone {
     display: flex;
-    align-items: center ;
+    align-items: center;
   }
-  .right-column-contact-info{
+  .right-column-contact-info {
     display: flex;
     align-items: center;
     justify-content: right;
   }
-  .right-column-contact-info *{
-  margin-left: 1rem;
+  .right-column-contact-info * {
+    margin-left: 1rem;
   }
   nav {
     height: 60px;
@@ -472,11 +476,11 @@ aside p {
     grid-template-columns: 3fr 2fr;
     align-items: center;
   }
-  .phone-recent-transactions{
+  .phone-recent-transactions {
     display: block;
     margin: 0;
   }
-  .phone-recent-transactions img{
+  .phone-recent-transactions img {
     width: 100%;
   }
   .box {
@@ -527,156 +531,192 @@ aside p {
   .about-app img {
     margin-left: 2rem;
   }
-  .app-feature-items{
+  .app-feature-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "a a a"
-    "b c d"
-    "e c f"
-    "g g g";
+    grid-template-areas:
+      "a a a"
+      "b c d"
+      "e c f"
+      "g g g";
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
-  .app-features div{
+  .app-feature-items .grid-area-a {
+    grid-area: a;
+    margin: 0% 33%;
+  }
+  .app-feature-items .grid-area-b {
+    grid-area: b;
+    * {
+      justify-self: right;
+      text-align: right;
+    }
+  }
+  .app-feature-items .mockup {
+    grid-area: c;
+    width: 90%;
+  }
+  .app-feature-items .grid-area-e {
+    grid-area: e;
+    * {
+      justify-self: right;
+      text-align: right;
+    }
+  }
+  .app-feature-items .grid-area-d {
+    grid-area: d;
+    * {
+      justify-self: left;
+      text-align: left;
+    }
+  }
+  .app-feature-items .grid-area-f {
+    grid-area: f;
+    * {
+      justify-self: left;
+      text-align: left;
+    }
+  }
+  .app-feature-items .grid-area-g {
+    grid-area: g;
+    margin: 0% 33%;
+  }
+  .app-features div {
     margin: 0px;
   }
-  .our-team .cards{
+  .our-team .cards {
     display: flex;
     flex-direction: row;
   }
-  .our-team .card{
+  .our-team .card {
     padding: 1rem 0rem;
     margin: 0.7rem 0.7rem 0rem 0.7rem;
-
   }
-  .our-team .card h6{
-  font-family: Josefin Sans;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #6c6c72;
+  .our-team .card h6 {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6c6c72;
   }
-  .our-team .card img{
+  .our-team .card img {
     width: 70%;
   }
-  .our-team .social-media *{
+  .our-team .social-media * {
     margin: 0.5rem;
   }
-  footer .card{
-    display: grid; 
+  footer .card {
+    display: grid;
     grid-template-columns: 5fr 1fr 5fr;
     align-items: center;
     justify-content: center;
     padding: 3%;
   }
-  footer .card div{
+  footer .card div {
     display: flex;
     flex-direction: row;
   }
-  footer .card .email{
+  footer .card .email {
     align-content: left;
   }
-  footer .card .phone{
+  footer .card .phone {
     align-content: left;
   }
 
-  footer .card h6{
-      font-size: 16px;
-      text-transform: lowercase;
-      font-weight: 400;
-      line-height: 24px;
+  footer .card h6 {
+    font-size: 16px;
+    text-transform: lowercase;
+    font-weight: 400;
+    line-height: 24px;
   }
   footer .card hr {
     padding: 0rem;
     height: 100px;
     width: 1px;
   }
-  footer .card *{
+  footer .card * {
     padding: 0.5rem;
     margin: 0px;
   }
-  .main-footer-content .logo{
+  .main-footer-content .logo {
     padding: 0;
   }
-  .main-footer-content{
+  .main-footer-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 10rem;
   }
-  .main-footer-content .social-media *{
+  .main-footer-content .social-media * {
     margin: 0.5rem;
-
   }
   .main-footer-content .newsletter form {
     grid-template-columns: 75% 25%;
   }
 }
 @media (min-width: 1440px) {
-h6 {
-  font-family: Josefin Sans;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 37.5px;
-  
-}
-h5 {
-  font-family: Josefin Sans;
-  font-weight: 700;
-  font-size: 31.25px;
-  line-height: 47.25%;
-}
-h4 {
-  font-family: Josefin Sans;
-  font-weight: 700;
-  font-size: 31.25px;
-  line-height: 47.25px;
-  color: #232233;
-}
-h2{
-  font-family: Josefin Sans;
-  font-weight: 700;
-  font-size: 48.83px;
-  line-height: 130%;
-  color: #5956e5;
-}
-p {
-  font-family: Josefin Sans;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #6c6c72;
-}
-nav div{
-  width: 50%;
-}
-nav button{
-  width: 30%;
-}
-.phone-recent-transactions img{
-  width: 100%;
-  margin: 0px;
-}
-.phone-recent-transactions{
-  margin: 0px;
-}
-main{
-  margin-top: 0px;
-}
+  h6 {
+    font-family: Josefin Sans;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37.5px;
+  }
+  h5 {
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 47.25%;
+  }
+  h4 {
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 47.25px;
+    color: #232233;
+  }
+  h2 {
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-size: 48.83px;
+    line-height: 130%;
+    color: #5956e5;
+  }
+  p {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6c6c72;
+  }
+  nav div {
+    width: 50%;
+  }
+  nav button {
+    width: 30%;
+  }
+  .phone-recent-transactions img {
+    width: 100%;
+    margin: 0px;
+  }
+  .phone-recent-transactions {
+    margin: 0px;
+  }
+  main {
+    margin-top: 0px;
+  }
 
-.box {
-  margin: 5% 10%;
-}
-.box div{
-  padding: 2rem;
-}
-.about-app{
-  padding: 8rem 10rem;
-}
-.wide-screen-text{
-  display:block;
-}
-.narrow-screen-text{
-  display:none;
-}
-
+  .box {
+    margin: 5% 10%;
+  }
+  .box div {
+    padding: 2rem;
+  }
+  .about-app {
+    padding: 8rem 10rem;
+  }
+  .wide-screen-text {
+    display: block;
+  }
+  .narrow-screen-text {
+    display: none;
+  }
 }
