@@ -51,12 +51,17 @@ body {
   background-size: 100%;
   font-family: Josefin Sans;
 }
+.contact-info{
+  display: none;
+}
+header{
+  margin:1rem 5rem;
+}
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   background-color: white;
-  margin: 10% 5%;
   border-radius: 3px;
   padding: 3px;
   height: 40px;
@@ -402,6 +407,41 @@ aside p {
     line-height: 24px;
     color: #6c6c72;
   }
+  .contact-info{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    color:white;
+  }
+  .contact-info *{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .left-column-contact-info{
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  .left-column-contact-info *{
+    margin-right: 0.5rem;
+  }
+  .left-column-contact-info .email{
+    display: flex;
+    align-items: center ;
+  }
+  .left-column-contact-info .phone{
+    display: flex;
+    align-items: center ;
+  }
+  .right-column-contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  .right-column-contact-info *{
+  margin-left: 1rem;
+  }
   nav {
     height: 60px;
   }
@@ -610,9 +650,7 @@ p {
 main{
   margin-top: 0px;
 }
-nav{
-  margin: 5% 8%;
-}
+
 .box {
   margin: 5% 10%;
 }
