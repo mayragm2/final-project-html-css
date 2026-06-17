@@ -2,6 +2,7 @@
 
 * {
   margin: 0px;
+  font-family: Josefin Sans;
 }
 .svg-inline--fa {
   height: 1.5rem;
@@ -15,20 +16,17 @@
   color: #5956e9;
 }
 h6 {
-  font-family: Josefin Sans;
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
 }
 h5,
 h2 {
-  font-family: Josefin Sans;
   font-weight: 600;
   font-size: 25px;
   line-height: 37.5px;
 }
 h4 {
-  font-family: Josefin Sans;
   font-weight: 700;
   font-size: 31.25px;
   line-height: 47.25px;
@@ -38,7 +36,6 @@ h2 {
   color: #5956e5;
 }
 p {
-  font-family: Josefin Sans;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -49,7 +46,6 @@ body {
   background-color: #5956e9;
   background-repeat: repeat-y;
   background-size: 100%;
-  font-family: Josefin Sans;
 }
 .contact-info {
   display: none;
@@ -57,6 +53,8 @@ body {
 header {
   margin: 1rem 10%;
 }
+
+/* NAV BAR */
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -85,7 +83,7 @@ nav button {
   width: 76px;
   justify-self: right;
   justify-content: center;
-  font-family: Josefin Sans;
+
   font-size: 10px;
   background-color: #5956e9;
   border-radius: 3px;
@@ -96,9 +94,12 @@ nav span {
   padding: 5px;
   justify-self: left;
 }
+/* MAIN */
 main {
   margin-top: 6rem;
 }
+
+/* MAIN-PAGE */
 .main-page {
   margin-bottom: 8rem;
 }
@@ -110,6 +111,7 @@ main {
 .phone-recent-transactions img {
   width: 75%;
 }
+
 .box {
   --b: 10px; /* border thickness*/
   --o: 20px, -20px; /* offset*/
@@ -169,6 +171,8 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* ABOUT APP */
 .about-app {
   background-color: white;
   padding: 60px 0px;
@@ -197,29 +201,31 @@ main {
 .wide-screen-text {
   display: none;
 }
-.app-features * {
-  color: white;
-  text-align: center;
-  margin: 1rem 0rem;
+
+/* APP FEATURES */
+  .app-features * {
+    color: white;
+    text-align: center;
+    margin: 1rem 0rem;
+  }
+  .mockup {
+    border-radius: 40px;
+    width: 214px;
+  }
+  .app-features {
+    margin: 4rem;
+    justify-content: center;
+  }
+  .app-features div {
+    margin: 5rem 1rem;
+  }
+  .app-features img {
+    display: flex;
+    justify-self: center;
+    margin: 2rem 0rem;
 }
 
-.mockup {
-  border-radius: 40px;
-  width: 214px;
-}
-.app-features {
-  margin: 4rem;
-  justify-content: center;
-}
-.app-features div {
-  margin: 5rem 1rem;
-}
-.app-features img {
-  display: flex;
-  justify-self: center;
-  margin: 2rem 0rem;
-}
-
+/* OUR TEAM */
 .our-team {
   background-color: white;
   text-align: center;
@@ -232,7 +238,6 @@ main {
   justify-content: center;
   margin: 1rem;
 }
-
 .our-team .card {
   box-shadow: 0px 1px 10px #0000001a;
   margin: 1rem 1rem 0rem 1rem;
@@ -240,7 +245,6 @@ main {
   padding: 1rem;
   font-weight: 300;
 }
-
 .our-team .card img {
   border-radius: 50%;
   justify-self: center;
@@ -250,6 +254,8 @@ main {
 .our-team {
   padding-bottom: 15rem;
 }
+
+/* FOOTER */
 footer {
   background-color: #232233;
   padding: 0rem 1rem;
@@ -283,7 +289,6 @@ footer .card hr {
   border: 1px solid #000000;
   border-radius: 5%;
 }
-
 footer .footer-content * {
   color: rgb(255, 255, 255);
 }
@@ -311,14 +316,12 @@ footer .logo {
   padding-inline-start: 0rem;
   list-style-type: none;
 }
-
 footer form {
   background-color: white;
   border-radius: 4px;
   display: grid;
   grid-template-columns: 85% 15%;
 }
-
 footer form input {
   border: 0px;
   height: 50px;
@@ -331,9 +334,7 @@ footer form input {
 .newsletter form * {
   margin: 0 !important;
 }
-
 input::placeholder {
-  font-family: Josefin Sans;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -370,63 +371,58 @@ aside {
 }
 aside p {
   align-self: center;
-  font-family: Josefin Sans;
+
   font-weight: 300;
   font-size: 12.8px;
   color: white;
 }
 
 @media (min-width: 768px) {
+  /* FONT FORMATTING */
   h6 {
-    font-family: Josefin Sans;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
   }
   h5 {
-    font-family: Josefin Sans;
     font-weight: 700;
     font-size: 31.25px;
     line-height: 47.25px;
     color: #232233;
   }
   h4 {
-    font-family: Josefin Sans;
     font-weight: 700;
     font-size: 31.25px;
     line-height: 47.25px;
     color: #232233;
   }
   h2 {
-    font-family: Josefin Sans;
     font-weight: 700;
     font-size: 31.25px;
     line-height: 47.25px;
     color: #5956e5;
   }
   p {
-    font-family: Josefin Sans;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #6c6c72;
   }
-
+  /* HEADER */
   header {
     margin: 1rem 3rem;
   }
+  /* CONTACT INFO*/
   .contact-info {
     display: grid;
     grid-template-columns: 70% 30%;
     color: white;
   }
   .contact-info * {
-    font-family: Josefin Sans;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
   }
-
   .left-column-contact-info {
     display: flex;
     margin-bottom: 1rem;
@@ -450,6 +446,8 @@ aside p {
   .right-column-contact-info * {
     margin-left: 1rem;
   }
+
+  /* NAV BAR*/
   nav {
     height: 60px;
   }
@@ -471,6 +469,8 @@ aside p {
     padding: 5px;
     justify-self: left;
   }
+
+  /* MAIN PAGE*/
   .main-page {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -497,30 +497,15 @@ aside p {
     z-index: 0;
     margin: 5%;
   }
-
   .box:after {
     content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     height: calc(100% + 36px);
-    clip-path: polygon(
-      var(--c) 0%,
-      calc(100% - var(--c)) 0%,
-      100% var(--c),
-      100% calc(100% - var(--c)),
-      calc(100% - var(--c)) 100%,
-      var(--c) 100%,
-      0% calc(100% - var(--c)),
-      0% var(--c)
-    );
     background: var(--bg-color);
     border: var(--b) solid var(--border-color);
     transform: translate(var(--o));
   }
+
+  /* ABOUT APP */
   .about-app .content {
     display: flex;
     justify-content: center;
@@ -531,6 +516,8 @@ aside p {
   .about-app img {
     margin-left: 2rem;
   }
+
+  /* APP FEATURES*/
   .app-feature-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -541,6 +528,7 @@ aside p {
       "g g g";
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
+    /* APP FEATURES GRID AREAS */
   .app-feature-items .grid-area-a {
     grid-area: a;
     margin: 0% 33%;
@@ -584,6 +572,8 @@ aside p {
   .app-features div {
     margin: 0px;
   }
+
+  /* OUR TEAM CARDS */
   .our-team .cards {
     display: flex;
     flex-direction: row;
@@ -593,7 +583,6 @@ aside p {
     margin: 0.7rem 0.7rem 0rem 0.7rem;
   }
   .our-team .card h6 {
-    font-family: Josefin Sans;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -605,6 +594,8 @@ aside p {
   .our-team .social-media * {
     margin: 0.5rem;
   }
+
+  /* FOOTER */
   footer .card {
     display: grid;
     grid-template-columns: 5fr 1fr 5fr;
@@ -622,7 +613,6 @@ aside p {
   footer .card .phone {
     align-content: left;
   }
-
   footer .card h6 {
     font-size: 16px;
     text-transform: lowercase;
@@ -654,45 +644,43 @@ aside p {
   }
 }
 @media (min-width: 1440px) {
+  /* FONT FORMATTING*/
   h6 {
-    font-family: Josefin Sans;
     font-weight: 600;
     font-size: 25px;
     line-height: 37.5px;
   }
   h5 {
-    font-family: Josefin Sans;
     font-weight: 700;
     font-size: 31.25px;
     line-height: 47.25%;
   }
   h4 {
-    font-family: Josefin Sans;
     font-weight: 700;
     font-size: 31.25px;
     line-height: 47.25px;
     color: #232233;
   }
   h2 {
-    font-family: Josefin Sans;
     font-weight: 700;
     font-size: 48.83px;
     line-height: 130%;
     color: #5956e5;
   }
   p {
-    font-family: Josefin Sans;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #6c6c72;
   }
+  /* NAV BAR */
   nav div {
     width: 50%;
   }
   nav button {
     width: 30%;
   }
+  /* MAIN PAGE */
   .phone-recent-transactions img {
     width: 100%;
     margin: 0px;
@@ -703,13 +691,13 @@ aside p {
   main {
     margin-top: 0px;
   }
-
   .box {
     margin: 5% 10%;
   }
   .box div {
     padding: 2rem;
   }
+  /* ABOUT APP */
   .about-app {
     padding: 8rem 10rem;
   }
