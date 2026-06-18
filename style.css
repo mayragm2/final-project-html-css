@@ -66,7 +66,7 @@ nav {
   height: 40px;
   box-shadow: 0px 1px 10px #0000001a;
 }
-nav div {
+nav div:first-of-type {
   display: flex;
   height: 150%;
   justify-content: center;
@@ -154,6 +154,9 @@ nav span {
   text-decoration:underline;
   color:#5956e5;
 
+}
+.inline-nav{
+  display: none;
 }
 
 /* MAIN */
@@ -522,7 +525,7 @@ aside p {
   nav {
     height: 60px;
   }
-  nav div {
+  nav div:first-of-type {
     height: calc(100% + 30px);
     width: 80%;
     justify-self: center;
@@ -748,11 +751,27 @@ aside p {
     color: #6c6c72;
   }
   /* NAV BAR */
-  nav div {
-    width: 50%;
+  nav{
+      grid-template-columns: 1fr auto 0.6fr 0.4fr;
+      grid-gap: 2%;
+      margin-bottom: 4rem;
+  }
+  nav div:first-of-type {
+    width: auto;
   }
   nav button {
-    width: 30%;
+    width: 90%;
+  }
+  nav .material-icons{
+   display: none;
+  }
+  nav .inline-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav .inline-nav li{
+    display: inline;
   }
   /* MAIN PAGE */
   .phone-recent-transactions img {
