@@ -17,6 +17,7 @@
       src="https://kit.fontawesome.com/71841ddd4b.js"
       crossorigin="anonymous"
     ></script>
+
   </head>
   <body>
     <header>
@@ -41,13 +42,23 @@
         </div>
       </div>
       <nav>
-        <span class="material-icons">menu</span>
+        <span class="material-icons" id="button">menu</span>
         <div><img src="assets/Logo.png" alt="APPOLLY" /></div>
         <button>DOWNLOAD</button>
       </nav>
+      <div class="drawer" id="drawer">
+        <button class="closeButton" id="closeButton">x</button>
+        <nav class="drawer-nav">
+          <a href="#HOME">HOME</a>
+          <a href="#ABOUT">ABOUT</a>
+          <a href="#FEATURES">FEATURES</a>
+          <a href="#TEAM">TEAM</a>
+          <a href="#CONTACT">CONTACT</a>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="main-page">
+      <section class="main-page" id="HOME">
         <div class="box">
           <div class="box-content">
             <h2>A GREAT APP MAKES YOUR LIFE BETTER</h2>
@@ -66,7 +77,7 @@
           />
         </div>
       </section>
-      <section class="about-app">
+      <section class="about-app" id="ABOUT">
         <div class="title-section">
           <h5>ABOUT OUR APP</h5>
           <p class="narrow-screen-text">
@@ -134,7 +145,7 @@
           </div>
         </div>
       </section>
-      <section class="app-features">
+      <section class="app-features" id="FEATURES">
         <div class="title-section">
           <h5>APP FEATURES</h5>
           <p class="narrow-screen-text">
@@ -195,7 +206,7 @@
           </div>
         </div>
       </section>
-      <section class="our-team">
+      <section class="our-team" id="TEAM">
         <div class="title-section">
           <h5>OUR REATIVE TEAM</h5>
           <p>
@@ -257,7 +268,7 @@
     </main>
 
     <footer>
-      <div class="card">
+      <div class="card" id="CONTACT">
         <div class="email">
           <img src="assets/Email Icon.png" />
           <h6>INFO@YOUREMAIL.COM</h6>
@@ -321,5 +332,6 @@
         </aside>
       </div>
     </footer>
+        <script src="script.js"></script>
   </body>
 </html>

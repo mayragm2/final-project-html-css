@@ -56,6 +56,7 @@ header {
 
 /* NAV BAR */
 nav {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -95,6 +96,66 @@ nav span {
   padding: 5px;
   justify-self: left;
 }
+
+.drawer{
+  left: 1rem;
+  width: 30%;
+  height: 30%;
+  background: #fff;
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  padding: 20px 0;
+  position: absolute;
+  border-radius: 10px;
+  opacity: 0;
+}
+.drawer-nav{
+  box-shadow:none;
+}
+.drawer.open{
+  margin: 1rem 2rem;
+  opacity: 100%;
+}
+.closeButton {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #4a43d4;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+/* Nav links inside drawer */
+.drawer-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem;
+  align-items: flex-start;
+  height: auto;
+  position: absolute;
+}
+
+.drawer-nav a {
+  display: block;
+  margin: 1rem 0rem;
+  color: #232233;
+  text-decoration: none;
+}
+
+.drawer-nav a:hover {
+  text-decoration:underline;
+  color:#5956e5;
+
+}
+
 /* MAIN */
 main {
   margin-top: 6rem;
