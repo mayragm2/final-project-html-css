@@ -1,7 +1,6 @@
 
   const button = document.getElementById('button');
   const closeButton  = document.getElementById('closeButton');
-  const overlay   = document.getElementById('overlay');
   const drawer    = document.getElementById('drawer');
 
   button.addEventListener("click", () => {
