@@ -55,6 +55,7 @@ header {
 }
 header .right-column-contact-info * {
   border: none;
+  color: white;
 }
 /* NAV BAR */
 nav {
@@ -494,7 +495,7 @@ aside p {
   /* CONTACT INFO*/
   .contact-info {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: auto auto;
     color: white;
   }
   .contact-info * {
@@ -522,9 +523,7 @@ aside p {
     align-items: center;
     justify-content: right;
   }
-  .right-column-contact-info * {
-    margin-left: 1rem;
-  }
+
 
   /* NAV BAR*/
   nav {
