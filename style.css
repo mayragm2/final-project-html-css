@@ -83,6 +83,7 @@ nav button {
   width: 76px;
   justify-self: right;
   justify-content: center;
+  text-align: center;
 
   font-size: 10px;
   background-color: #5956e9;
@@ -233,10 +234,13 @@ main {
 .our-team .title-section {
   padding: 4rem 3rem 1rem 3rem;
 }
-.our-team .card * {
+
+.our-team .card *{
   display: flex;
   justify-content: center;
-  margin: 1rem;
+}
+.our-team .card *:not(.social-media) {
+  padding: 1rem;
 }
 .our-team .card {
   box-shadow: 0px 1px 10px #0000001a;
@@ -249,10 +253,17 @@ main {
   border-radius: 50%;
   justify-self: center;
   outline: 4px solid #5956e5;
-  outline-offset: 4px;
+  outline-offset: -0.7rem;
 }
 .our-team {
   padding-bottom: 15rem;
+}
+.social-media *{
+  padding: 1rem calc(0.1rem + 1px) ;
+  border-right: 1px solid #000000;
+}
+.social-media *:last-child{
+  border-right: none;
 }
 
 /* FOOTER */
@@ -260,7 +271,6 @@ footer {
   background-color: #232233;
   padding: 0rem 1rem;
 }
-
 footer .card {
   background-color: white;
   border-radius: 10px;
@@ -299,13 +309,13 @@ footer div .social-media {
   display: flex;
   justify-content: left;
   margin-right: 4rem;
+ 
 }
 footer div .social-media * {
   margin: 1rem;
   justify-self: center;
-}
-footer div .social-media hr {
-  background-color: white;
+  border-color: white;
+  
 }
 footer .logo {
   padding-top: 15rem;
@@ -520,18 +530,21 @@ aside p {
   /* APP FEATURES*/
   .app-feature-items {
     display: grid;
+    grid-gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "a a a"
       "b c d"
       "e c f"
       "g g g";
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    
   }
     /* APP FEATURES GRID AREAS */
   .app-feature-items .grid-area-a {
     grid-area: a;
     margin: 0% 33%;
+    align-self: flex-end;
   }
   .app-feature-items .grid-area-b {
     grid-area: b;
@@ -542,7 +555,7 @@ aside p {
   }
   .app-feature-items .mockup {
     grid-area: c;
-    width: 90%;
+    width: 100%;
   }
   .app-feature-items .grid-area-e {
     grid-area: e;
@@ -588,11 +601,11 @@ aside p {
     line-height: 24px;
     color: #6c6c72;
   }
+  .our-team .card h4 {
+   font-size: 25px;
+  }
   .our-team .card img {
     width: 70%;
-  }
-  .our-team .social-media * {
-    margin: 0.5rem;
   }
 
   /* FOOTER */
@@ -643,7 +656,7 @@ aside p {
     grid-template-columns: 75% 25%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 992px) {
   /* FONT FORMATTING*/
   h6 {
     font-weight: 600;
@@ -699,12 +712,24 @@ aside p {
   }
   /* ABOUT APP */
   .about-app {
-    padding: 8rem 10rem;
+    padding: 10% 5%;
+  }
+  .about-app .content img{
+    height: 100%;
   }
   .wide-screen-text {
     display: block;
   }
   .narrow-screen-text {
     display: none;
+  }
+  .our-team .card img{
+    width: 50%;
+  }
+  .our-team .card{
+    margin: 1.5rem;
+  }
+  .our-team .cards {
+    margin: 1.5rem;
   }
 }
