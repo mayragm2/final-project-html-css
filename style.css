@@ -53,7 +53,9 @@ body {
 header {
   margin: 1rem 10%;
 }
-
+header .right-column-contact-info * {
+  border: none;
+}
 /* NAV BAR */
 nav {
   position: relative;
@@ -97,7 +99,7 @@ nav span {
   justify-self: left;
 }
 
-.drawer{
+.drawer {
   left: 1rem;
   width: 30%;
   height: 30%;
@@ -109,10 +111,10 @@ nav span {
   border-radius: 10px;
   opacity: 0;
 }
-.drawer-nav{
-  box-shadow:none;
+.drawer-nav {
+  box-shadow: none;
 }
-.drawer.open{
+.drawer.open {
   margin: 1rem 2rem;
   opacity: 100%;
 }
@@ -151,11 +153,10 @@ nav span {
 }
 
 .drawer-nav a:hover {
-  text-decoration:underline;
-  color:#5956e5;
-
+  text-decoration: underline;
+  color: #5956e5;
 }
-.inline-nav{
+.inline-nav {
   display: none;
 }
 
@@ -268,26 +269,26 @@ main {
 }
 
 /* APP FEATURES */
-  .app-features * {
-    color: white;
-    text-align: center;
-    margin: 1rem 0rem;
-  }
-  .mockup {
-    border-radius: 40px;
-    width: 214px;
-  }
-  .app-features {
-    margin: 4rem;
-    justify-content: center;
-  }
-  .app-features div {
-    margin: 5rem 1rem;
-  }
-  .app-features img {
-    display: flex;
-    justify-self: center;
-    margin: 2rem 0rem;
+.app-features * {
+  color: white;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+.mockup {
+  border-radius: 40px;
+  width: 214px;
+}
+.app-features {
+  margin: 4rem;
+  justify-content: center;
+}
+.app-features div {
+  margin: 5rem 1rem;
+}
+.app-features img {
+  display: flex;
+  justify-self: center;
+  margin: 2rem 0rem;
 }
 
 /* OUR TEAM */
@@ -299,11 +300,11 @@ main {
   padding: 4rem 3rem 1rem 3rem;
 }
 
-.our-team .card *{
+.our-team .card * {
   display: flex;
   justify-content: center;
 }
-.our-team .card *:not(.social-media) {
+.our-team .card *:not(.social-media *) {
   padding: 1rem;
 }
 .our-team .card {
@@ -322,11 +323,11 @@ main {
 .our-team {
   padding-bottom: 15rem;
 }
-.social-media *{
-  padding: 1rem calc(0.1rem + 1px) ;
+.social-media * {
+  padding: 0rem 1rem;
   border-right: 1px solid #000000;
 }
-.social-media *:last-child{
+.social-media *:last-child {
   border-right: none;
 }
 
@@ -373,13 +374,11 @@ footer div .social-media {
   display: flex;
   justify-content: left;
   margin-right: 4rem;
- 
 }
 footer div .social-media * {
   margin: 1rem;
   justify-self: center;
   border-color: white;
-  
 }
 footer .logo {
   padding-top: 15rem;
@@ -602,9 +601,8 @@ aside p {
       "e c f"
       "g g g";
     grid-template-rows: auto 1fr 1fr auto;
-    
   }
-    /* APP FEATURES GRID AREAS */
+  /* APP FEATURES GRID AREAS */
   .app-feature-items .grid-area-a {
     grid-area: a;
     margin: 0% 33%;
@@ -666,7 +664,7 @@ aside p {
     color: #6c6c72;
   }
   .our-team .card h4 {
-   font-size: 25px;
+    font-size: 25px;
   }
   .our-team .card img {
     width: 70%;
@@ -751,26 +749,26 @@ aside p {
     color: #6c6c72;
   }
   /* NAV BAR */
-  nav{
-      grid-template-columns: 1fr auto 0.6fr 0.4fr;
-      grid-gap: 2%;
-      margin-bottom: 4rem;
+  nav {
+    grid-template-columns: 1fr auto 0.6fr 0.4fr;
+    grid-gap: 2%;
+    margin-bottom: 4rem;
   }
   nav div:first-of-type {
-    width: auto;
+    width: 110%;
   }
   nav button {
     width: 90%;
   }
-  nav .material-icons{
-   display: none;
+  nav .material-icons {
+    display: none;
   }
   nav .inline-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  nav .inline-nav li{
+  nav .inline-nav li {
     display: inline;
   }
   /* MAIN PAGE */
@@ -794,7 +792,7 @@ aside p {
   .about-app {
     padding: 10% 5%;
   }
-  .about-app .content img{
+  .about-app .content img {
     height: 100%;
   }
   .wide-screen-text {
@@ -803,10 +801,10 @@ aside p {
   .narrow-screen-text {
     display: none;
   }
-  .our-team .card img{
+  .our-team .card img {
     width: 50%;
   }
-  .our-team .card{
+  .our-team .card {
     margin: 1.5rem;
   }
   .our-team .cards {
