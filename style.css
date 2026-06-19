@@ -319,8 +319,28 @@ main {
 .our-team .card img {
   border-radius: 50%;
   justify-self: center;
-  outline: 4px solid #5956e5;
-  outline-offset: -0.7rem;
+
+  z-index: 2;
+  
+}
+.our-team .card .profile-picture{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.our-team .card .profile-picture svg circle{
+  stroke-dasharray: 40% 5%;
+  stroke: #5956e9;
+  r: 6.8rem; 
+  cx: 50%;
+  cy: 50%;
+  fill:rgb(255, 255, 255);
+  stroke-width:4px;
+  z-index: 2;
+}
+.our-team .card .profile-picture svg{
+  position: absolute;
+  z-index: 2;
 }
 .our-team {
   padding-bottom: 15rem;
@@ -665,8 +685,8 @@ div .copyright p {
     flex-direction: row;
   }
   .our-team .card {
-    padding: 1rem 0rem;
-    margin: 0.7rem 0.7rem 0rem 0.7rem;
+    padding: 0.5rem 0rem;
+    margin: 0.3rem 1rem 0rem 1rem;
   }
   .our-team .card h6 {
     font-weight: 400;
@@ -675,10 +695,20 @@ div .copyright p {
     color: #6c6c72;
   }
   .our-team .card h4 {
-    font-size: 25px;
+    font-size: 20px;
+  }
+  .our-team p{
+    padding: 1%;
   }
   .our-team .card img {
     width: 70%;
+  }
+  .our-team .card .social-media{
+    padding:1%;
+  }
+  .our-team .card .profile-picture svg circle{
+    r: 37%;
+
   }
 
   /* FOOTER */
@@ -821,4 +851,9 @@ div .copyright p {
   .our-team .cards {
     margin: 1.5rem;
   }
+    .our-team .card .profile-picture svg circle{
+    r:30%;
+
+  }
+
 }
