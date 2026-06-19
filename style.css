@@ -82,11 +82,13 @@ nav img {
   justify-self: center;
   height: 12px;
 }
-nav button {
+nav .download-button {
+  display: flex;
   height: 100%;
   width: 76px;
   justify-self: right;
   justify-content: center;
+  align-items: center;
   text-align: center;
 
   font-size: 10px;
@@ -443,7 +445,7 @@ input::placeholder {
   color: #6c6c72;
   padding: 4%;
 }
-.newsletter form button {
+.newsletter form .download-button {
   background-color: #5956e9;
   border: 0px;
   height: 90%;
@@ -564,7 +566,7 @@ div .copyright p {
     justify-self: center;
     height: 25%;
   }
-  nav button {
+  nav .download-button {
     height: 100%;
     width: 50%;
     font-size: 1rem;
@@ -696,6 +698,7 @@ div .copyright p {
   }
   .our-team .card h4 {
     font-size: 20px;
+    padding: inherit 0px !important;
   }
   .our-team p{
     padding: 1%;
@@ -798,7 +801,7 @@ div .copyright p {
   nav div:first-of-type {
     width: 110%;
   }
-  nav button {
+  nav .download-button {
     width: 90%;
   }
   nav .material-icons {
