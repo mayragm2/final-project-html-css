@@ -3,14 +3,14 @@
   const closeButton  = document.getElementById('closeButton');
   const drawer    = document.getElementById('drawer');
 
-  button.addEventListener("click", () => {
-    drawer.classList.add('open');
-  });
 
-  closeButton.addEventListener("click", () => {
+  button.addEventListener("click", () => {
+    drawer.classList.toggle('open');
+  });
+    drawer.addEventListener("click", () => {
     drawer.classList.remove('open');
   });
 
-  overlay.addEventListener('click', () => {
+  closeButton.addEventListener("click", () => {
     drawer.classList.remove('open');
   });
